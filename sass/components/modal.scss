@@ -1,0 +1,49 @@
+.modal {
+    position: absolute;
+    width: 528px;
+    height: 581px;
+    top: 50%;
+    left: 50%;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background-color: ($title-text-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+    &__button-close {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        margin-top: 8px;
+        margin-right: 8px;
+        margin-left: 490px;
+        top: 0%;
+        left: 0%;
+        box-sizing: border-box;
+        border-radius: 50%;
+        border: 1px solid ($primary-close-color);
+        background-color: ($title-text-color);
+    }
+
+    &__icon-close {
+        width: 11px;
+        height: 11px;
+        fill: ($primary-black-color);
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__icon-close:hover {
+        fill: ($accent-color);
+    }
+
+    &__text {
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.15;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: ($primary-text-color);
+    }
+}

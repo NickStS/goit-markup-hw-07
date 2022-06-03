@@ -1,0 +1,60 @@
+.form {
+    width: 448px;
+    height: 342px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &__reg {
+        margin-top: 12px;
+        margin-bottom: 20px;
+    }
+
+    &__field {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    &__label {
+        margin-bottom: 4px;
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.01em;
+        color: ($primary-seventy-color);
+    }
+
+    &__input {
+        width: 448px;
+        height: 40px;
+        margin-bottom: 10px;
+        padding-left: 42px;
+        border: 1px solid ($primary-bordermod-color);
+        border-radius: 4px;
+        outline: 0;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__input:focus {
+        border: 1px solid ($accent-color);
+    }
+
+    &__svg-modal {
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        margin-left: 15px;
+        transform: translateY(150%);
+        fill: ($primary-text-color);
+    }
+
+    &__input:focus-within+&__svg-modal {
+        fill: ($accent-color);
+    }
+
+    &__checkbox {
+        padding-left: 1.2em;
+    }
+}

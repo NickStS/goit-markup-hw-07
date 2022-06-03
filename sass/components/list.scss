@@ -1,0 +1,137 @@
+.list {
+    list-style-type: none;
+    display: flex;
+
+    &>li {
+        margin-right: 30px;
+    }
+
+    &>li:last-child {
+        margin-right: 0;
+    }
+
+    &__icon {
+        width: 270px;
+        height: 120px;
+        background-color: ($primary-background-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__svg {
+        width: 70px;
+        height: 70px;
+    }
+
+    &__name {
+        text-transform: uppercase;
+        color: ($primary-text-color);
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        width: 270px;
+        margin: 0;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    &__description {
+        color: ($primary-seventy-color);
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        width: 270px;
+        margin: 0;
+    }
+
+    &__item {
+        position: absolute;
+        width: 370px;
+        height: 70px;
+        margin-top: 224px;
+        background-color: ($primary-three-color);
+    }
+
+    &__text {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        padding: 27px 82px;
+        color: ($title-text-color);
+    }
+
+    &__card-name {
+        color: ($primary-text-color);
+        font-size: 16px;
+        line-height: 1.18;
+        letter-spacing: 0.03em;
+        text-align: center;
+        margin: 0;
+    }
+
+    &__card-team {
+        color: ($primary-seventy-color);
+        font-size: 16px;
+        line-height: 1.18;
+        letter-spacing: 0.03em;
+        text-align: center;
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    &__card-network {
+        display: flex;
+        padding-top: 16px;
+    }
+
+    &__card-network>li {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+
+    &__card-network>li:hover,
+    &__card-network>li:focus {
+        background-color: ($accent-color);
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__card-network>li:last-child {
+        margin-right: 0px;
+    }
+
+    &__card-svg {
+        width: 44px;
+        height: 44px;
+        padding: 12px;
+        fill: ($primary-icon-color);
+    }
+
+    &__card-svg:hover,
+    &__card-svg:focus {
+        fill: ($title-text-color);
+    }
+
+    &__card {
+        background: ($title-text-color);
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+        margin-right: 30px;
+    }
+
+    &__card:last-child {
+        margin-right: 0px;
+    }
+
+    &__card-body {
+        padding: 30px 32px;
+    }
+}

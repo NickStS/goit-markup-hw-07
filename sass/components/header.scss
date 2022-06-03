@@ -1,0 +1,15 @@
+.header {
+    border-bottom: ($title-text-color);
+
+    &__head {
+        display: flex;
+    }
+
+    &__head>li {
+        margin-right: auto;
+    }
+
+    &__head>li:last-child {
+        margin: 0;
+    }
+}

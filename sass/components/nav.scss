@@ -1,0 +1,41 @@
+.nav {
+    display: flex;
+
+    &__logo {
+        font-family: 'Raleway', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        text-decoration: none;
+        color: ($primary-black-color);
+        letter-spacing: 0.03em;
+        display: block;
+        padding-top: 24px;
+        padding-bottom: 25px;
+    }
+
+    &__logo>span {
+        color: ($accent-color);
+    }
+
+    &__head {
+        list-style-type: none;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        display: flex;
+        margin-left: 93px;
+        list-style: none;
+    }
+
+    &__text {
+        color: ($primary-text-color);
+        text-decoration: none;
+        font-weight: 500;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        display: block;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+}

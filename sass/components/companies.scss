@@ -1,0 +1,42 @@
+.companies {
+    display: flex;
+
+    &__icon {
+        width: 170px;
+        height: 92px;
+        border: 1px solid ($primary-icon-color);
+        border-radius: 4px;
+        margin-right: 30px;
+    }
+
+    &__icon:last-child {
+        margin-right: 0px;
+    }
+
+    &__icon:hover,
+    &__icon:focus {
+        fill: ($accent-color);
+        border: 1px solid ($accent-color);
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__icon-link {
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__svg {
+        width: 170px;
+        height: 92px;
+        fill: ($primary-icon-color);
+        padding: 16px 32px;
+    }
+
+    &__svg:hover,
+    &__svg:focus {
+        fill: ($accent-color);
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}

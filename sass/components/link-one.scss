@@ -1,0 +1,39 @@
+.link-one {
+    list-style-type: none;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    list-style: none;
+
+    &__item {
+        margin-right: 50px;
+    }
+
+    &__cont {
+        color: ($primary-seventy-color);
+        text-decoration: none;
+        font-weight: 500;
+        font-style: normal;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        display: flex;
+        align-items: center;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        fill: ($primary-seventy-color);
+    }
+
+    &__icon {
+        width: 16px;
+        height: 12px;
+        margin-right: 10px;
+    }
+
+    &__icon-svg {
+        width: 10px;
+        height: 16px;
+        margin-right: 10px;
+    }
+}

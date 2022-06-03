@@ -1,0 +1,41 @@
+.address {
+    list-style-type: none;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    display: block;
+    padding: 0;
+    list-style: none;
+    margin-top: 20px;
+
+    &__link {
+        margin-bottom: 9px;
+    }
+
+    &__linkt:last-child {
+        margin-bottom: 0;
+    }
+
+    &__link-text {
+        color: ($title-text-color);
+        text-decoration: none;
+        font-style: normal;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+    }
+
+    &__link-text:hover,
+    &__link-text:focus {
+        color: ($accent-color);
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__link-text_grey {
+        color: ($primary-seventy-color);
+        text-decoration: none;
+        font-weight: 500;
+        font-style: normal;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+    }
+}

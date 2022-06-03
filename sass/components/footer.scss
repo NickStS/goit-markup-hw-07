@@ -1,0 +1,122 @@
+.footer {
+    background-color: ($pimary-gray-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__list {
+        display: flex;
+        align-items: baseline;
+    }
+
+    &__list>li {
+        margin-right: 70px;
+    }
+
+    &__list>li:last-child {
+        margin: 0;
+    }
+
+    &__logo {
+        font-family: 'Raleway', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        text-decoration: none;
+        color: ($title-text-color);
+        letter-spacing: 0.03em;
+        display: block;
+        padding-top: 24px;
+        padding-bottom: 25px;
+    }
+
+    &__logo>span {
+        color: ($accent-color);
+    }
+
+    &__network {
+        display: flex;
+    }
+
+    &__network>li {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background: ($primary-footer-color);
+        margin-right: 10px;
+    }
+
+    &__network>li:hover,
+    &__network>li:focus {
+        background-color: ($accent-color);
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__network>li:last-child {
+        margin-right: 0px;
+    }
+
+
+    &__network-svg {
+        width: 44px;
+        height: 44px;
+        padding: 12px;
+        fill: ($title-text-color);
+    }
+
+    &__form {
+        justify-content: flex;
+    }
+
+    &__input {
+        box-sizing: border-box;
+        width: 358px;
+        height: 50px;
+        margin-top: 20px;
+        margin-right: 12px;
+        padding-left: 16px;
+        color: ($title-text-color);
+        border: 1px solid ($primary-subscribe-color);
+        filter: drop-shadow(0px 4px 4px) ($primary-subshadow-color);
+        border-radius: 4px;
+        background-color: ($pimary-gray-color);
+        outline: 0;
+    }
+
+    &__input:focus {
+        border: 1px solid ($accent-color);
+    }
+
+    &__subscribe-button {
+        width: 200px;
+        height: 50px;
+        background: ($accent-color);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border: none;
+        border-radius: 4px;
+        font-family: 'Roboto';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.87;
+        letter-spacing: 0.06em;
+        justify-content: center;
+        color: ($title-text-color);
+    }
+
+    &__subscribe-text {
+        margin-right: 10px;
+    }
+
+    &__subscribe-svg {
+        width: 24px;
+        height: 24px;
+        align-items: center;
+    }
+
+    &__svg-link {
+        width: 24px;
+        height: 24px;
+        fill: ($title-text-color);
+    }
+}
